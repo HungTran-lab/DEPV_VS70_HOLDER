@@ -1,0 +1,63 @@
+
+
+pip install pyserial
+pip install pyqt5
+
+pyuic5 -x GUI2.ui -o gui2.py
+pyrcc5 image.qrc -o image.py
+
+pip install pyinstaller
+pyinstaller --onefile --windowed ver2.py
+
+Ver1/ 4/10/2025
+
+
+
+
+
+ver2
+1️⃣ Giới hạn log 20 dòng (không giật, không mất màu)
+✅ 2️⃣ Tối ưu hàm đọc COM (tách xử lý riêng, GUI không lag)
+✅ 3️⃣ Gom màu sắc vào hằng số dễ bảo trì
+✅ 4️⃣ Tự reset màu sensor & xóa log khi mở chương trình
+✅ 6️⃣ Cải thiện UX khi kết nối COM (tự disable/enable combobox)
+
+
+Label sensor bi sai
+
+
+
+ver3
+
+chinh lai color Qlable cho fix
+pip install pyinstaller
+pyinstaller --onefile --windowed ver3.py
+
+
+ver4.
+add reset counter each day
+format: OK:data=0,0,0,0,0
+pip install pyinstaller
+pyinstaller --onefile --windowed ver4.py
+
+
+ver5,
++   change format csv, 
+    60,2025-10-21,20:36:11,"1,0,0,0,0",NG,18DJ9600267AEBA3YAM0013
+    61,2025-10-21,20:36:14,"0,0,0,0,0",OK,18DJ9600267AEBA3YAM0014
+    62,2025-10-21,20:36:16,"0,0,0,0,0",OK,18DJ9600267AEBA3YAM0015
+
+
+Ver6
++ Add QlineEdit_Show MOdel
++ Add button SET --> Gửi model xuong ESP
+
+    MODEL=DJ9600267A
+    MODEL=DJ9600269A
+
+pip install pyinstaller
+pyinstaller --onefile --windowed ver6.py
+
+
+
+
