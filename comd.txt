@@ -58,6 +58,22 @@ Ver6
 pip install pyinstaller
 pyinstaller --onefile --windowed ver6.py
 
+(Ver đang chạy MP)
+
+//---------------------------------------Upgrade -----------------------------------
+
+Ver7: 17/12
+
++ Change vi tri terminal, Screw----OK
++ Save COM Port  ----Use config.csv   --> Bester use Qsetting for save
++ Upgrade all , Optimal Code----many change point --> OK
+
++ Icon App
 
 
+
+
+
+
+pyinstaller --noconsole --onefile --icon "DEPV.ico" --add-data "gui2.ui;." --add-data "DEPV.ico;." ver7.py
 
